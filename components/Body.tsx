@@ -3,7 +3,7 @@ import { fetchTemp } from '@/utils'
 import { useState, useEffect } from "react";
 
  
-const Body = async () => { 
+const Body =  async () => { 
     const [allTemp, setTemp] = useState<any>()
 
     const a = async () => {
@@ -12,6 +12,8 @@ const Body = async () => {
     }
     useEffect(() => {
         a()
+        console.log("data; ",allTemp);
+        
     }, [])
 
     return (
@@ -36,9 +38,9 @@ const Body = async () => {
                                 <div className="details color-primary">
                                     <span className="title-1" style={{ fontWeight: "600", fontSize: "27px" }}>
                                         {post.title}
-                                    </span>
+                                    </span> 
                                     <div className="actions">
-                                        <a href={`/post?title=${post.title}&type=${post.title}&desc=${post.description}`}>
+                                        <a href={`/post?title=${post.title}&type=${post.title}&desc=${post.description}&pdf=${post.pdf}`}>
                                             <div className="btn btn-1 mr-2 btn-bg-gray">Benefits</div>
                                         </a>
                                         <a href={`/reservation/?type=${post.title}`} >

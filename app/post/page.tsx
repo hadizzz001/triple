@@ -21,7 +21,8 @@ const page = () => {
     const type = searchParams.get('type')?.toLowerCase() 
     const desc = searchParams.get('desc')?.toLowerCase() 
     const title = searchParams.get('title')?.toLowerCase() 
-
+    const pdf = searchParams.get('pdf')?.toLowerCase()  
+     
 
     // async function getData1() {
     //     const res = await fetch(`http://localhost:3000/api/post/${id}`, { cache: 'no-store' });
@@ -84,15 +85,19 @@ const page = () => {
                         </p>
                         {/* <p>Download the PDF below to view the detailed plans and benefits.</p> */}
                     </div>
-                    {/* <div className="content pl-5 pt-3 pb-3 background-gray">
+                    {pdf?.length > 0 ? (
+                    <div className="content pl-5 pt-3 pb-3 background-gray">
                         <a
-                            href="https://crm.securiteapps.com/storage/AppProduct/pdf1695376922.pdf"
+                            href={pdf}
                             target="_blank"
                             className="btn btn-2"
                         >
                             Show PDF
                         </a>
-                    </div> */}
+                    </div>
+                    ):(
+                        <div></div>
+                    )}
                 </div>
             </div>
             <div className="clearfix" />

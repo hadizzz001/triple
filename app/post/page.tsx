@@ -78,7 +78,7 @@ const page = () => {
                             {title}
                         </h2> 
                         <h4 className="color-primary font-weight-normal mb-30px">
-                            {type}
+                            Type: {type}
                         </h4> 
                         <p>
                         {desc}

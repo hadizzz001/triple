@@ -32,7 +32,7 @@ function NavBar() {
     window.location.href = "/"
   }
 
-  console.log("local is : ", lang)
+ 
   return (
     <div style={{backgroundColor:"#731b1a", paddingTop:"3em"}}>
       <nav className="w-full bg-white top-0 left-0 right-0 z-10" style={{padding:"2em"}}>

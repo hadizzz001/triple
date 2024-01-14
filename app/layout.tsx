@@ -29,6 +29,13 @@ export default function RootLayout({
   return (
     <html lang='en'>  
       <body>
+      <style
+  dangerouslySetInnerHTML={{
+    __html:
+      "\n        button:focus{\n          outline:none !important\n        }\n        "
+  }}
+/>
+
 
         <ContextWrapper>
           <Navbar2 />

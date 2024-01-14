@@ -503,7 +503,8 @@ a:hover{
 }
 
 .title-1{
-	color:#6c3429;
+	color:#fff;
+	text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 	font-size: 220%;
 }
 

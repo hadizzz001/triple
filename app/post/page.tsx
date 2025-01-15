@@ -80,9 +80,11 @@ const page = () => {
                         <h4 className="color-primary font-weight-normal mb-30px">
                             Type: {type}
                         </h4> 
-                        <p>
-                        {desc}
-                        </p>
+                        <div
+              className="prose lg:prose-xl max-w-[500px] custom-list"
+              style={{ maxWidth: '500px' }}
+              dangerouslySetInnerHTML={{ __html: desc }}
+            />
                         {/* <p>Download the PDF below to view the detailed plans and benefits.</p> */}
                     </div>
                     {pdf?.length > 0 ? (

@@ -74,12 +74,10 @@ const page = () => {
                  
                 <div className="body">
                     <div className="content pl-5 pt-5 pr-5 pb-3 background-gray">
-                        <h2 className="color-primary font-weight-normal mb-30px">
-                            {title}
-                        </h2> 
-                        <h4 className="color-primary font-weight-normal mb-30px">
-                            Type: {type}
-                        </h4> 
+                    <h2 className="color-primary font-weight-normal mb-30px">
+    {title.charAt(0).toUpperCase() + title.slice(1).toLowerCase()}
+</h2>
+ 
                         <div
               className="prose lg:prose-xl max-w-[500px] custom-list"
               style={{ maxWidth: '500px' }}

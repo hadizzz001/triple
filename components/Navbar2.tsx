@@ -34,7 +34,7 @@ function NavBar() {
 
  
   return (
-    <div style={{backgroundColor:"#731b1a", paddingTop:"3em"}}>
+    <div style={{backgroundColor:"#494a3b", paddingTop:"3em"}}>
       <nav className="w-full bg-white top-0 left-0 right-0 z-10" style={{padding:"2em"}}>
         <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex">
           <div>

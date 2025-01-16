@@ -23,7 +23,7 @@
 }
 
 .color-primary-light{
-	color: #6c3429 !important;
+	color: #494a3b !important;
 }
 .color-secondary{
 	color: #636363 !important;
@@ -48,11 +48,11 @@
 }
 
 .background-light-blue{
-	background-color: #6c3429;
+	background-color: #494a3b;
 }
 
 .background-dark-blue{
-	background-color: #6c3429 !important;
+	background-color: #494a3b !important;
 }
 
 .background-gray{
@@ -509,7 +509,7 @@ a:hover{
 }
 
 .title-2{
-	color:#6c3429;
+	color:#494a3b;
 	font-size: 150%;
 }
 
@@ -1487,7 +1487,7 @@ ul.navbar-nav li{
 /*///////////////////// custom page 1 /////////////////////*/
 /*//////////////////////////////////////////////////*/
 .custom-header-1{
-	background-color: #6c3429;
+	background-color: #494a3b;
 }
 .custom-page-1{
 	padding: 0;
@@ -1869,7 +1869,7 @@ ul.navbar-nav li{
 }
 .aside-page nav.aside ul li.active,
 .aside-page nav.aside ul li:hover{
-	background-color: #6c3429;
+	background-color: #494a3b;
 }
 .aside-page nav.aside ul li.active a,
 .aside-page nav.aside ul li:hover a{

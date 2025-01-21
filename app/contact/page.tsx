@@ -5,6 +5,23 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useRouter } from 'next/navigation'
 import { useSearchParams } from 'next/navigation'
+interface Service {
+  title: string;
+  description: string;
+}
+
+interface Item {
+  title: string;
+  description: string;
+}
+
+interface AboutData {
+  id: string;
+  title: string;
+  description: string;
+  service: Service[];
+  item: Item[];
+}
 
 
 export default function Home() {
@@ -15,6 +32,8 @@ export default function Home() {
       const [inputs, setInputs] = useState({});
       const [active, setActive] = useState(false) 
       const [value, setValue] = useState(''); 
+      const [data, setData] = useState<AboutData | null>(null);
+      const [loading, setLoading] = useState<boolean>(true);
   
       const handleSubmit = (e: any) => {
           e.preventDefault(); 
@@ -45,7 +64,28 @@ export default function Home() {
           setInputs((prevState) => ({ ...prevState, [name]: value}));
       };
    
+
   
+      useEffect(() => {
+          fetch("/api/contact/678f9473287cecbe04342a81")
+              .then((response) => response.json())
+              .then((result: AboutData) => {
+                  setData(result);
+                  setLoading(false);
+              })
+              .catch((error) => {
+                  console.error("Error fetching data:", error);
+                  setLoading(false);
+              });
+      }, []);
+  
+      if (loading) {
+          return <p>Loading...</p>;
+      }
+  
+      if (!data) {
+          return <p>Error loading data.</p>;
+      }
 
 
   return (
@@ -160,70 +200,18 @@ export default function Home() {
                     alt="sa location"
                     className="float-left mr-3"
                   />
-                  <div className="float-left">
-                    Lebanon, Beirut <br />
-                    Sin El Fil, Fouad Chehab Avenue, <br />
-                    Gedco 3 Center, Block B <br />
-                    P.O.Box: 16 6499
+                  <div className="float-left" dangerouslySetInnerHTML={{ __html: data.description }}> 
                   </div>
                 </div>
               </div>
               <div className="col-lg-1"> 
               </div>
-              <div className="col-lg-5">
-                <div className="clearfix mb-sm-3">
-                  <div className="icon">
-                    <img
-                      src="https://www.securiteassurance.com/images/icon-mobile.svg"
-                      alt="sa mobile"
-                      className="float-left mr-3"
-                    />
-                  </div>
-                  <div className="float-left">+961 9 231 511</div>
-                </div>
-                <div className="clearfix mb-sm-3">
-                  <div className="icon">
-                    <img
-                      src="https://www.securiteassurance.com/images/icon-telephone.svg"
-                      alt="sa telephone"
-                      className="float-left mr-3"
-                    />
-                  </div>
-                  <div className="float-left">+961 9 232 735</div>
-                </div>
-                <div className="clearfix mb-sm-3">
-                  <div className="icon">
-                    <img
-                      src="https://www.securiteassurance.com/images/icon-envelope.svg"
-                      alt="sa mobile"
-                      className="float-left mr-3"
-                    />
-                  </div>
-                  <div className="float-left">email@email.com</div>
-                </div>
-              </div>
+ 
             </div>
 
 
 
-
-            <div className="d-none">
-              <p>
-                Lebanon, Beirut
-                <br />
-                Sin El Fil, Fouad Chehab Avenue,
-                <br />
-                Gedco 3 Center, Blocks A&amp;B
-                <br />
-                P.O.Box: 15 5499
-              </p>
-              <p>
-              +961 9 231 511
-                <br />
-                +961 9 232 735
-              </p>
-              <p>email@email.com</p>
-            </div>
+ 
           </div>
           <br />
         </div>

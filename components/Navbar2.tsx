@@ -79,22 +79,22 @@ function NavBar() {
                         {c.nav?.map((a: any, j: any) => (
                           <div key={j}>
                             <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                              <li className="text-xl text-black py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-blue-900  border-blue-900  md:hover:text-red-600 md:hover:bg-transparent">
+                              <li className="text-xl text-black py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-blue-900    md:hover:text-red-600 md:hover:bg-transparent">
                                 <Link href="/" onClick={() => setNavbar(!navbar)}>
                                   {a.t1}
                                 </Link>
                               </li>
-                              <li className="text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600  border-blue-900  md:hover:text-red-600 md:hover:bg-transparent">
+                              <li className="text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600    md:hover:text-red-600 md:hover:bg-transparent">
                                 <Link href="/about" onClick={() => setNavbar(!navbar)}>
                                   {a.t2}
                                 </Link>
                               </li>
-                              <li className="text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600  border-blue-900  md:hover:text-red-600 md:hover:bg-transparent">
+                              <li className="text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600    md:hover:text-red-600 md:hover:bg-transparent">
                                 <Link href="/contact" onClick={() => setNavbar(!navbar)}>
                                   {a.t3}
                                 </Link>
                               </li>
-                              <li className="text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600  border-blue-900  md:hover:text-red-600 md:hover:bg-transparent">
+                              <li className="text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600    md:hover:text-red-600 md:hover:bg-transparent">
                                 <Link href="https://triple-dash.netlify.app/" target='_blank' onClick={() => setNavbar(!navbar)}>
                                   {a.t4}
                                 </Link>
@@ -119,22 +119,22 @@ function NavBar() {
                         {c.nav?.map((a: any, j: any) => (
                           <div key={j}>
                             <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                              <li className="text-xl text-black py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-blue-900  border-blue-900  md:hover:text-red-600 md:hover:bg-transparent">
+                              <li className="text-xl text-black py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-blue-900    md:hover:text-red-600 md:hover:bg-transparent">
                                 <Link href="/" onClick={() => setNavbar(!navbar)}>
                                   {a.t1}
                                 </Link>
                               </li>
-                              <li className="text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600  border-blue-900  md:hover:text-red-600 md:hover:bg-transparent">
+                              <li className="text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600    md:hover:text-red-600 md:hover:bg-transparent">
                                 <Link href="/about" onClick={() => setNavbar(!navbar)}>
                                   {a.t2}
                                 </Link>
                               </li>
-                              <li className="text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600  border-blue-900  md:hover:text-red-600 md:hover:bg-transparent">
+                              <li className="text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600    md:hover:text-red-600 md:hover:bg-transparent">
                                 <Link href="/blog/view" onClick={() => setNavbar(!navbar)}>
                                   {a.t3}
                                 </Link>
                               </li>
-                              <li className="text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600  border-blue-900  md:hover:text-red-600 md:hover:bg-transparent">
+                              <li className="text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-blue-600    md:hover:text-red-600 md:hover:bg-transparent">
                                 <Link href="https://triple-dash.netlify.app/" target='_blank' onClick={() => setNavbar(!navbar)}>
                                   {a.t4}
                                 </Link>

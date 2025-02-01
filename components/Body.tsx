@@ -55,7 +55,8 @@ const Body = () => {
                             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12 slide slide-product">
                                 <img
                                     className="w-100 h-100"
-                                    src={post.img[0]}
+                                    src={`api/proxy?url=${post.img[0]}`}
+
                                 />
                                 <div className="details color-primary">
                                     <span className="title-1" style={{ fontWeight: "600", fontSize: "27px" }}>

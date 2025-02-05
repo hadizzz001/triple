@@ -14,10 +14,19 @@ import ContextWrapper from './context/store';
 export const metadata = {
   title: 'Triple Win Solutions',
   description: 'Discover the best insurance in the world',
+  keywords: 'insurance, best insurance, affordable insurance, health insurance, life insurance, car insurance, home insurance, financial protection',
   icons: {
     icon: 'favicon.ico',
   },
-}
+  openGraph: {
+    title: 'Triple Win Solutions',
+    description: 'Discover the best insurance in the world',
+    url: 'https://triplewin.solutions',
+    type: 'website',
+    image: 'favicon.ico',
+  },
+};
+
 
 export default function RootLayout({
   children

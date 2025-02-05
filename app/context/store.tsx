@@ -17,7 +17,7 @@ const def = [
                 }],
                 footer:[{ 
                     par: 'All rights reserved ©️',
-                    privacy: 'Privacy Policy',
+                    privacy: 'Privacy Policy ',
                     term: 'Terms of Use'
                 }],
                 hero:[{ 

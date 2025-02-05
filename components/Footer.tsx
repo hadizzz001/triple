@@ -102,12 +102,12 @@ const Footer = () => {
                   <div key={i}>
                     {c.footer?.map((a: any, j: any) => (
                       <div key={j}>
-                        <Link href='' className='text-gray-500'>
+                        {/* <Link href='/privacy' className='text-gray-500'>
                           {a.privacy}
                         </Link>
-                        <Link href='' className='text-gray-500'>
+                        <Link href='/term' className='text-gray-500'>
                         {a.term}
-                        </Link>
+                        </Link> */}
                       </div>
                     ))}
                   </div>

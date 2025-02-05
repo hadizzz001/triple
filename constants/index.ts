@@ -5,21 +5,13 @@
   
   export const footerLinksEn = [
     {
-      title: "About",
-      links: [
-        { title: "How it works", url: "/about" },
-        { title: "Featured", url: "/about" },
-        { title: "Partnership", url: "/about" },
-        { title: "Bussiness Relation", url: "/about" },
-      ],
-    },
-    {
-      title: "Company",
+      title: "Sitemap",
       links: [
         { title: "Home", url: "/" },
-        { title: "Testimony", url: "/" },
+        { title: "About", url: "/about" },
+        { title: "Contact", url: "/contact" }, 
       ],
-    },
+    }, 
     {
       title: "Socials",
       links: [

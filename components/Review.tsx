@@ -47,13 +47,9 @@ const Review = async () => {
                                 <article className='container'>
                                     <div className="flex items-center mb-4" style={{ display: "inline" }}>
                                         <img className="w-10 h-10 rounded-full" src="https://www.svgrepo.com/show/527946/user-circle.svg" alt="" />
-                                        <div className="font-medium dark:text-white">
-                                            <p>{post.name}</p>
-                                            <p>{
-                                                
-                                            post.date.split('T')[0]
-                                            
-                                            }</p>
+                                        <div className="font-medium ">
+                                            <p  >{post.name}  </p>
+                                             
                                         </div>
                                     </div>
 

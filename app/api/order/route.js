@@ -1,5 +1,9 @@
 import { NextResponse } from "next/server"
 import prisma from "../../../libs/prismadb"
+import { Resend } from "resend";
+import { redirect } from 'next/navigation';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const POST = async (request) => {
     try {
@@ -16,6 +20,24 @@ export const POST = async (request) => {
                 message
             }
         })
+
+        if(message != null ){
+            resend.emails.send({
+                from: "info@anazon.hadizproductions.com",
+                to: "elie@triplewin.solutions",
+                subject: "New message from your website customer",
+                text: "Name: " + firstname + " " + lastname + "\nEmail:" + email + "\nPhone:" + phone + "\n" + message,
+            })
+        }
+        else{
+            resend.emails.send({
+                from: "info@anazon.hadizproductions.com",
+                to: "elie@triplewin.solutions",
+                subject: "New message from your website customer",
+                text: "Name: " + firstname + " " + lastname + "\nEmail:" + email + "\nPhone:" + phone + "\nType:" + type ,
+            })
+        }
+
 
         return NextResponse.json(newOrder);
 

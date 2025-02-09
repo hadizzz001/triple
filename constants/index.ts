@@ -15,8 +15,8 @@
     {
       title: "Socials",
       links: [
-        { title: "WhatsApp", url: "https://wa.me/9619231511" },
-        { title: "Facebook", url: "https://www.facebook.com/profile.php?id=100070231930301" },
+        { title: "WhatsApp", url: "https://wa.me/96170171507" },
+        { title: "Facebook", url: "https://www.facebook.com/p/Triple-Win-Solutions-100064070526549/" },
       ],
     },
   ];

@@ -24,7 +24,7 @@ export const POST = async (request) => {
         if(message != null ){
             resend.emails.send({
                 from: "info@anazon.hadizproductions.com",
-                to: "elie@triplewin.solutions",
+                to: "info@triplewin.solutions",
                 subject: "New message from your website customer",
                 text: "Name: " + firstname + " " + lastname + "\nEmail:" + email + "\nPhone:" + phone + "\n" + message,
             })
@@ -32,7 +32,7 @@ export const POST = async (request) => {
         else{
             resend.emails.send({
                 from: "info@anazon.hadizproductions.com",
-                to: "elie@triplewin.solutions",
+                to: "info@triplewin.solutions",
                 subject: "New message from your website customer",
                 text: "Name: " + firstname + " " + lastname + "\nEmail:" + email + "\nPhone:" + phone + "\nType:" + type ,
             })

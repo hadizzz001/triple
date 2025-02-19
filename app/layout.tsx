@@ -7,6 +7,7 @@ import './bs-select.css'
 import './slick.css'
 import { useSearchParams } from 'next/navigation'
 import ContextWrapper from './context/store';
+import WhatsAppIcon from '../components/WhatsAppIcon';
  
 
  
@@ -48,6 +49,7 @@ export default function RootLayout({
 
         <ContextWrapper>
           <Navbar2 />
+          <WhatsAppIcon />
           {children}
           <Footer />
         </ContextWrapper>

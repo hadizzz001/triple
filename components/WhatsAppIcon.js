@@ -1,5 +1,4 @@
-// components/WhatsAppIcon.js
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+ 
 
 const WhatsAppIcon = () => {
   return (

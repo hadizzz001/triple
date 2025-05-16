@@ -51,22 +51,51 @@ const page = () => {
 
 
     const handleSubmit = (e: any) => {
-        e.preventDefault();
-        setActive(true) 
-        axios
-            .post("/api/order", inputs)
-            .then((res) => {
-                console.log(res);
-            })
-            .catch((err) => {
-                console.log(err);
-            })
-            .finally(() => {
-                setInputs({});
-                setActive(false)
-                router.push('/thank');
-            });
-    }; 
+  e.preventDefault();
+  setActive(true);
+
+  axios
+    .post("/api/order", inputs)
+    .then((res) => {
+      console.log(res);
+
+      const whatsappUrl = createWhatsAppURL(inputs);
+      window.open(whatsappUrl, "_blank"); // Open WhatsApp message
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+    .finally(() => {
+      setInputs({});
+      setActive(false);
+      router.push('/thank');
+    });
+};
+
+
+
+
+const createWhatsAppURL = (inputs) => {
+  const { firstname, lastname, email, phone, type, message } = inputs;
+
+  const whatsappMessage = `
+*Customer Inquiry:*
+Name: ${firstname} ${lastname}
+Email: ${email}
+Phone: ${phone}
+Type: ${type} 
+  `;
+
+  const encodedMessage = encodeURIComponent(whatsappMessage);
+  const phoneNumber = '96170171507'; // Change if needed
+  return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+};
+
+
+
+
+
+
 
     return (
         <div className="container-xl"> 

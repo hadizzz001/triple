@@ -123,6 +123,9 @@ export default function Home() {
 
 
 
+<style
+  dangerouslySetInnerHTML={{ __html: "\n  h1{\n    color:#adadad;\n  }\n" }}
+/>
 
 
 

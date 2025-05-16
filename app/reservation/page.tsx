@@ -53,8 +53,7 @@ const createWhatsAppURL = (inputs) => {
 Name: ${firstname} ${lastname}
 Email: ${email}
 Phone: ${phone}
-Type: ${type}
-Message: ${message}
+Type: ${type} 
   `;
 
   const encodedMessage = encodeURIComponent(whatsappMessage);

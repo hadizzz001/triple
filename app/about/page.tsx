@@ -53,7 +53,7 @@ export default function Home() {
             <div className="custom-header-1">
                 <div className="container-xl">
                     <br />
-                    <h4 className="text-center text-white pt-3 mb-4 font-sinkinsans-700bold">
+                    <h4 className="text-center text-white pt-3 mb-4 font-sinkinsans-700bold" style={{color:"#adadad"}}>
                         {data.title}
                     </h4>
                     <br />

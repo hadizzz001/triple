@@ -58,7 +58,7 @@ Message: ${message}
   `;
 
   const encodedMessage = encodeURIComponent(whatsappMessage);
-  const phoneNumber = '96178850249'; // Change if needed
+  const phoneNumber = '96170171507'; // Change if needed
   return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 };
 

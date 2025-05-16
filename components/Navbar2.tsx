@@ -34,14 +34,14 @@ function NavBar() {
 
  
   return (
-    <div style={{backgroundColor:"#494a3b", paddingTop:"3em"}}>
+    <div style={{backgroundColor:"#606a9f", paddingTop:"3em"}}>
       <nav className="w-full bg-white top-0 left-0 right-0 z-10" style={{padding:"2em"}}>
         <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex">
           <div>
             <div className="flex items-center justify-between md:block">
 
               <Link href="/" className='flex justify-center items-center'>
-                <Image src="https://ucarecdn.com/5628caa0-e18d-4466-9f1f-3f63bdf00321/logo1.png" sizes="100vw" alt='Logo' width={250} height={22} className='object-contain' />
+                <img src="https://res.cloudinary.com/dj61ewxvc/image/upload/v1747387936/newlogo_fp8ojm.png" sizes="100vw" alt='Logo' width={250} height={22} className='object-contain' />
               </Link>
               <div className="md:hidden">
                 <button

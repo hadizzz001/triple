@@ -6,14 +6,11 @@ const AutoCarousel = () => {
   return (
     <Carousel autoPlay infiniteLoop interval={3000} showArrows={false} showStatus={false} showIndicators={false} showThumbs={false} >
       <div>
-        <img src="api/proxy?url=https://res.cloudinary.com/dixtwo21g/image/upload/v1699477674/next/pc1mjcjvri20z95jzfch.jpg" alt="Image 1" />
+        <img src="https://res.cloudinary.com/dj61ewxvc/image/upload/v1747386354/home-01_ju6xng.jpg" alt="Image 1" />
       </div>
       <div>
-        <img src="api/proxy?url=https://res.cloudinary.com/dixtwo21g/image/upload/v1699477675/next/twkk3qfwamebsdfadl6a.jpg" alt="Image 2" />
-      </div>
-      <div>
-      <img src="api/proxy?url=https://res.cloudinary.com/dixtwo21g/image/upload/v1699477674/next/pc1mjcjvri20z95jzfch.jpg" alt="Image 1" /> 
-      </div>
+        <img src="https://res.cloudinary.com/dj61ewxvc/image/upload/v1747386061/slide-01_vwqcfl.jpg" alt="Image 2" />
+      </div> 
     </Carousel>
   );
 };

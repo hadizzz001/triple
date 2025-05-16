@@ -65,7 +65,7 @@ export default function Home() {
                 <div className="company-profile">
 
                     <p className="w-md-60 color-secondary font-sinkinsans-700bold line-height: 24px; mx-auto text-center font-size-14px"></p>
-                    <p style={{ textAlign: "center", paddingLeft: 40 }}>
+                    <p style={{ textAlign: "center" }}>
                         <strong>
                             <span style={{ fontSize: "12pt" }} dangerouslySetInnerHTML={{ __html: data.description }}>
 

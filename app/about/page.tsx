@@ -132,7 +132,7 @@ export default function Home() {
                             {data.item.map((item, index) => (
                                 <div key={index} className="section-head col-sm-12">
                                     <h4>
-                                        <span>{item.title}</span>
+                                        <span style={{color:"#adadad"}}>{item.title}</span>
                                     </h4>
                                     <p>{item.description}</p>
                                 </div>
